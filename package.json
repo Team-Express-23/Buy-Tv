@@ -1,16 +1,16 @@
 {
-  "name": "Buy-Tv",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Team-Express-23/Buy-Tv.git",
-  "author": "Encho Enevski <encho.enevski@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "eslint": "^4.1.1",
-    "gulp": "^3.9.1",
-    "body-parser": "^1.17.1",
-    "bootstrap": "^3.3.7",
-    "express": "^4.15.2",
-    "handlebars": "^4.0.6"
-  }
+    "name": "buy-tv",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Team-Express-23/Buy-Tv.git",
+    "author": "Encho Enevski <encho.enevski@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "bootstrap": "^3.3.7",
+        "eslint": "^4.1.1",
+        "express": "^4.15.2",
+        "gulp": "^3.9.1",
+        "handlebars": "^4.0.6"
+    }
 }
