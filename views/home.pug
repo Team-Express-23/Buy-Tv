@@ -1,4 +1,21 @@
 extends master-view/master
 
-block body
-    h1 Home Page
+block body 
+    h1 Welcome to our online TV store.
+    form.form-inline
+        .form-group.m-right
+            label.sr-only(for='exampleInputEmail3') Email address
+            input#exampleInputEmail3.form-control(type='email', placeholder='Email')
+        .form-group.m-right
+            label.sr-only(for='exampleInputPassword3') Password
+            input#exampleInputPassword3.form-control(type='password', placeholder='Password')
+        .checkbox
+            label
+                input.m-right(type='checkbox')
+                |  Remember me &nbsp&nbsp
+        button.btn.btn-default.m-right(type='submit') Sign in
+        button.btn.btn-success(type='submit') Register
+        p
+    .form-group
+        buton.form-control.btn.btn-primary(type='button') View our products
+

@@ -1,0 +1,23 @@
+body {
+    margin: 1rem;
+    background-color: #E9EBEE;
+}
+
+.m-right {
+    margin-right: 1rem;
+}
+
+img {
+    height: 25rem;
+    width: 25rem;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0rem;
+    padding-left: 0rem;
+}
+
+.pull-left {
+    margin-right: 1rem;
+}
