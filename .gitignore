@@ -64,4 +64,4 @@ typings/
 yarn.lock
 
 ESLint
-.eslintrc
+*.eslintrc
