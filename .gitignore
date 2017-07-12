@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+# VS code
+.vscode
+
+# Yarn
+yarn.lock
+
+ESLint
+.eslintrc
