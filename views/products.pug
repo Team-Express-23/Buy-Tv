@@ -1,4 +1,12 @@
 extends master-view/master
 
 block body
-    h1 Products Page
+    each item, index in array
+        .wrapper.col-md-4
+            img.img-responsive.center-block(src=`${item.image}`)
+            strong
+                p #{item.brandAndModel}
+            p #{item.price}
+            p #{item.info1}
+            p #{item.info2}
+            p #{item.info3}

@@ -21,3 +21,15 @@ ul {
 .pull-left {
     margin-right: 1rem;
 }
+
+.btn-link {
+    padding-left: 0;
+}
+
+.wrapper {
+    width: 40rem;
+    height: 40rem;
+    border: 0.3rem solid #a4c4f4;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
