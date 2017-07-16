@@ -1,7 +1,23 @@
 mixin nav
-    a.btn.btn-link(href="/") Home
-    a.btn.btn-link(href="registration") Register
-    a.btn.btn-link(href="products") Products
-    a.btn.btn-link(href=":id") Your cart
-    a.btn.btn-link(href="about") About us
-    p
+    .navbar.navbar-default(role='navigation')
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/') Buy TV
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/products') Products
+              li
+                a(href='/about') About us           
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/sign_in') Sign In
+              li
+                a(href='/registration') Register

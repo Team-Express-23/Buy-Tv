@@ -17,8 +17,8 @@ const { Router } = require("express"),
             .get("/about", (req, res) => {
                 res.render("about_us");
             })
-            .get("/:id", (req, res) => {
-                res.render("user_id");
+            .get("/sign_in", (req, res) => {
+                res.render("sign_in");
             });
 
         app.use("/", router);
