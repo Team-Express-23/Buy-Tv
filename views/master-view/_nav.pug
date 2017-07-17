@@ -1,26 +1,26 @@
 mixin nav
-  block scripts
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
-    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
-    .navbar.navbar-default(role='navigation')
-        .container-fluid
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href='/') Buy TV
-          .navbar-collapse.collapse
-            ul.nav.navbar-nav
-              li
-                a(href='/') Home
-              li
-                a(href='/products') Products
-              li
-                a(href='/about') About us           
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='/sign_in') Sign In
-              li
-                a(href='/registration') Sign Up
+    block scripts
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+        .navbar.navbar-default(role='navigation')
+            .container-fluid
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') Buy TV
+                .navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href='/') Home
+                        li
+                            a(href='/products') Products
+                        li
+                            a(href='/about') About us
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='/sign_in') Sign In
+                        li
+                            a(href='/registration') Sign Up
