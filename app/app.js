@@ -16,8 +16,8 @@ const init = (data) => {
     app.use("/libs", express.static(path.join(__dirname, "../node_modules/")));
     app.use("/static", express.static(path.join(__dirname, "../static")));
 
-    // require("../routes/routes.path")(app);
     require("../routes/server.routes")(app, data);
+    require("../routes/routes.path")(app);
 
     //app middlewares for sessions
     app.use(cookieParser());
