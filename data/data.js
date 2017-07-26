@@ -1,5 +1,5 @@
 const init = (db) => {
-    return Promise.resolve({});
+    return db.collection("items").find({}).toArray();
 };
 
 module.exports = { init };

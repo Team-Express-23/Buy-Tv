@@ -27,9 +27,17 @@ ul {
 }
 
 .wrapper {
+    padding: 1rem;
     width: 40rem;
-    height: 42rem;
+    height: 44rem;
     border: 0.3rem solid #a4c4f4;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    background-color: white;
+}
+
+.btnAdd {
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
 }

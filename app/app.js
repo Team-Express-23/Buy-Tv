@@ -1,3 +1,5 @@
+/* globals __dirname */
+
 const path = require("path"),
     express = require("express"),
     bodyParser = require("body-parser"),
@@ -14,18 +16,19 @@ const init = (data) => {
     app.use("/libs", express.static(path.join(__dirname, "../node_modules/")));
     app.use("/static", express.static(path.join(__dirname, "../static")));
 
-    require("../routes/routes.path")(app);
+    // require("../routes/routes.path")(app);
+    require("../routes/server.routes")(app, data);
 
     //app middlewares for sessions
     app.use(cookieParser());
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
-    app.use(session({ secret: 'purple unicorn' }));
+    app.use(session({ secret: "purple unicorn" }));
 
     //passport setup
     const authStrategy = new LocalStrategy(
         (username, password, done) => {
-            done(error, user)
+            done(error, user);
         });
 
 

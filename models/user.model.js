@@ -1,7 +1,7 @@
 class User {
     static isValid(model) {
-        return typeof model !== 'undefined' &&
-            typeof model.text === 'string' &&
+        return typeof model !== "undefined" &&
+            typeof model.text === "string" &&
             model.text.length > 3;
     }
 

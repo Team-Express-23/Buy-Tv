@@ -4,13 +4,14 @@ block body
     h1 Info thanks to 
         a(href="http://argos.co.uk")
             b www.argos.co.uk
-    each item, index in array
+    each item in array
         .wrapper.col-md-4
             img.img-responsive.center-block(src=`${item.image}`)
             strong
                 p #{item.brandAndModel}
-            p #{item.price}
+            p £#{item.price}
             p #{item.info1}
             p #{item.info2}
             p #{item.info3}
-            button.btn.btn-success.form-control Add to cart
+            button.btn.btn-success.form-control.btnAdd
+                b Add to cart
