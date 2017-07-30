@@ -1,26 +1,27 @@
 {
     "name": "buy-tv",
     "version": "1.0.0",
-    "main": "index.js",
-    "repository": "https://github.com/Team-Express-23/Buy-Tv.git",
-    "author": "Encho Enevski <encho.enevski@gmail.com>",
-    "license": "MIT",
-    "dependencies": {
-        "body-parser": "^1.17.1",
-        "bootstrap": "^3.3.7",
-        "connect-flash": "^0.1.1",
-        "cookie-parser": "^1.4.3",
-        "express": "^4.15.2",
-        "express-messages": "^1.0.1",
-        "express-session": "^1.15.3",
-        "nodemon": "^1.11.0",
-        "passport": "^0.3.2",
-        "passport-local": "^1.0.0",
-        "pug": "^2.0.0-rc.2",
-        "mongodb": "^2.2.29"
-    },
+    "description": "",
     "scripts": {
         "start": "node server.js",
         "dev": "nodemon server.js"
+    },
+    "author": "express23",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "bootstrap": "^3.3.7",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.15.3",
+        "express-session": "^1.15.3",
+        "jquery": "^3.2.1",
+        "mongodb": "^2.2.29",
+        "passport": "^0.3.2",
+        "passport-local": "^1.0.0",
+        "pug": "^2.0.0-rc.2"
+    },
+    "devDependencies": {
+        "nodemon": "^1.11.0"
     }
 }

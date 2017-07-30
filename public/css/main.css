@@ -41,3 +41,17 @@ ul {
     right: 0;
     bottom: 0.3rem;
 }
+
+li.button {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+li.buttonb {
+    margin-top: 1.5rem;
+    margin-left: 1.3rem;
+}
+
+span.glyphicon {
+    padding-right: 0.5rem;
+}

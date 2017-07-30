@@ -1,0 +1,9 @@
+extends ../master-view/master
+
+block body
+    form.form-inline(action='/auth/login', method="POST")
+            .form-group.m-right
+                input#focus.form-control(type="text" name="username" placeholder="Username" autofocus)
+            .form-group.m-right
+                input.form-control(type="password" name="password" placeholder="Password")
+            button.btn.btn-success.m-right Login
