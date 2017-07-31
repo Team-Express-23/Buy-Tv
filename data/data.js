@@ -1,3 +1,4 @@
+"use strict";
 const ItemsData = require("./items.data"),
     UsersData = require("./users.data"),
     init = (db) => {

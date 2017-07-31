@@ -1,3 +1,4 @@
+"use strict";
 const port = 3000,
     async = () => {
         return Promise.resolve();

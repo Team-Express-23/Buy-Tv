@@ -1,4 +1,5 @@
 /* globals __dirname */
+"use strict";
 
 const path = require("path"),
     bodyParser = require("body-parser"),

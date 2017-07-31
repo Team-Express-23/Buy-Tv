@@ -1,3 +1,4 @@
+"use strict";
 class ItemsData {
     constructor(db) {
         this.items = db.collection("items");

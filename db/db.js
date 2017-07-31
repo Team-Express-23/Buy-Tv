@@ -1,3 +1,4 @@
+"use strict";
 const connectionString = "mongodb://localhost/items-db",
     { MongoClient } = require("mongodb"),
     init = () => {
