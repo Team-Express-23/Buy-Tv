@@ -1,16 +1,19 @@
 const { Router } = require("express");
 
 const init = (app, data) => {
-    const router = new Router(),
-        controller = require("./items.controller").init(data);
+    const router = new Router();
 
     router
         .get("/", (req, res) => {
-            // console.log('Cookies: ', req.secret);
             res.render("home");
         })
         .get("/products", (req, res) => {
-            controller.productsPage(req, res);
+            data.items.getAllItems()
+                .then((result) => {
+                    res.render("products", {
+                        array: result
+                    });
+                });
         })
         .get("/about", (req, res) => {
             res.render("about");

@@ -5,14 +5,12 @@ const path = require("path"),
     cookieParser = require("cookie-parser"),
     express = require("express"),
     init = (app) => {
-        app.set("view engine", "pug");
-        app.use(bodyParser.json());
-        app.use(bodyParser.urlencoded({ extended: true }));
-
-        app.use("/libs", express.static(path.join(__dirname, "../../node_modules")));
-        app.use("/public", express.static(path.join(__dirname, "../../public")));
-
-        app.use(cookieParser("keyboard cat")); // items.router.js
+        app.set("view engine", "pug")
+            .use(bodyParser.json())
+            .use(bodyParser.urlencoded({ extended: true }))
+            .use("/libs", express.static(path.join(__dirname, "../../node_modules")))
+            .use("/public", express.static(path.join(__dirname, "../../public")))
+            .use(cookieParser("keyboard cat"));
     };
 
 module.exports = { init };
